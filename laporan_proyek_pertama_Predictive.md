@@ -100,12 +100,27 @@ Algoritma machine learning akan memiliki performa lebih baik dan bekerja lebih c
 ## Modeling
 Algoritma pada proyek ini melakukan pemodelan dengan 3 algoritma, yaitu Random Forest, Gradient Boosting dan Linear Regression  
 - Random Forest 
-Algoritma random forest adalah teknik dalam machine learning dengan metode ensemble. Teknik ini beroperasi dengan membangun banyak decision tree pada waktu pelatihan. Proyek ini menggunakan sklearn.ensemble.RandomForestRegressor dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah random_state untuk mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
+Algoritma random forest adalah teknik dalam machine learning dengan metode ensemble. Proyek ini menggunakan sklearn.ensemble.RandomForestRegressor dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah: 
+
+    * random_state = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
+    * n_estimators = Jumlah maksimum estimator di mana boosting dihentikan.
+    * max_depth = Kedalaman maksimum setiap tree.
+
+- Gradient Boosting
+Gradient Boosting adalah algoritma machine learning berbasis ensemble. Untuk proyek ini menggunakan sklearn.ensemble.GradientBoostingRegressor dengan parameter sebagai berikut:
+  * random_state = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
+  * n_estimators = Jumlah maksimum estimator di mana boosting dihentikan.
+  * learning_rate =  parameter yang mengatur seberapa besar langkah yang diambil untuk memperbarui bobot model selama pelatihan     
+
+- Linear Regression
+Linear Regression adalah algoritma machine learning yang sederhana namun sangat efektif untuk memodelkan hubungan antara variabel independen (fitur) dan variabel dependen (target). Proyek ini menggunakan sklearn.linear_model.LinearRegression dengan parameter sebagai berikut:
+  * fit_intercept = Parameter ini menentukan apakah model harus menghitung intercept (titik potong pada sumbu y) dalam persamaan linear.
+  * n_jobs = Parameter ini menentukan jumlah thread (proses paralel) yang digunakan oleh model saat melakukan komputasi.
 
 
 ## Evaluation
-Mean Absolute Error (MAE) berfungsi untuk mengukur seberapa dekat hasil prediksi suatu model dengan nilai sebenarnya. MAE mengukur rata-rata dari selisih absolut antara prediksi model dan nilai sebenarnya dari data yang diamati. Alih-alih membiarkan nilai apa adanya, pada MAE setiap nilai yang diambil sifatnya absolut sehingga nilai negatif hilang. Berikut adalah penjelasan detail tentang Mean Absolute Error.
-MAE dihitung dengan menjumlahkan selisih absolut antara setiap prediksi individu dan nilai sebenarnya, kemudian dibagi dengan jumlah total observasi yang dapat direpresentasikan sebagai berikut.
+Mean Square Error (MSE) adalah salah satu metrik evaluasi yang umum digunakan dalam statistik dan machine learning. Fungsi dari MSE adalah untuk mengukur seberapa baik suatu model dalam memetakan nilai prediksi ke nilai sebenarnya dengan menggunakan kuadrat kesalahan sebagai dasar perhitungan. Berikut rumus yang digunakan untuk menghitung MSE:
+
 
 <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/a5edae19655215e83ec3a145c09d05e5bd4e3a87/images/hasil%20evaluasi.png"></div>
 
