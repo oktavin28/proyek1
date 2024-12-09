@@ -58,7 +58,7 @@ Dari ke 12 fitur terdapat bebrapa fitur yang memiliki banyak nilai kosong dan du
 
 #### Korelasi Fitur Numerik
 
- <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/07897aec6c169e46eb12f099ed7d7dc6dc96947b/images/korelasinumerik.png" width="350"/></div>
+ <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/07897aec6c169e46eb12f099ed7d7dc6dc96947b/images/korelasinumerik.png"></div>
 
 #### Korelasi Fitur Kategorik
 
