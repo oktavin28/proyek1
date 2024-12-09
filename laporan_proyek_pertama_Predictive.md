@@ -13,8 +13,6 @@ Mobil adalah salah satu aset yang memiliki nilai jual bervariasi bergantung pada
 
 Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
 
-Bagian laporan ini mencakup:
-
 ### Problem Statements
 
 1. Fitur apa saja yang paling berpengaruh terhadap harga jual mobil?
