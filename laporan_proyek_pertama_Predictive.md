@@ -1,5 +1,8 @@
 # Laporan Proyek Machine Learning - Nur Oktavin Idris
 
+### Prediksi Harga Mobil
+Ini adalah proyek pertama predictive analytics untuk memenuhi submission dicoding. Proyek ini membangun model machine learning untuk memprediksi harga mobil
+
 ## Domain Proyek
 
 Mobil adalah salah satu aset yang memiliki nilai jual bervariasi bergantung pada berbagai faktor seperti merek, model, spesifikasi teknis, dan fitur lainnya. Prediksi harga jual mobil dapat membantu produsen, penjual, dan konsumen untuk memahami nilai pasar kendaraan secara lebih akurat. Proyek ini bertujuan untuk membangun model machine learning yang dapat memprediksi harga jual mobil dengan menggunakan dataset yang mencakup berbagai fitur kendaraan.
@@ -35,7 +38,7 @@ Bagian laporan ini mencakup:
 
 
 ## Data Understanding
-Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target variabel adalah 'MSRP' (harga jual mobil). Sumber dataset ini dari  [Kaggle](https://www.kaggle.com/datasets/CooperUnion/cardataset/data). Dataset berisi informasi tentang kendaraan dengan fitur-fitur berikut:
+Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target variabel adalah 'MSRP'. MSRP adalah harga yang direkomendasikan oleh produsen kendaraan kepada dealer untuk dijadikan acuan dalam menjual produk ke konsumen. Sumber dataset ini dari  [Kaggle](https://www.kaggle.com/datasets/CooperUnion/cardataset/data). Dataset berisi informasi tentang kendaraan dengan fitur-fitur berikut:
 - Make: Merek mobil.
 - Model: Model mobil.
 - Year: Tahun produksi.
@@ -66,7 +69,7 @@ Sebaliknya, fitur seperti Highway MPG dan Engine Cylinders menunjukkan korelasi 
 #### Korelasi Fitur Kategorik
  <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/c93189f10ac253c0a2ccdd3ec176e7df2687fba6/images/korelasi%20make.png"></div>
 
-Korelasi fitur ini menampilkan rata-rata harga yang disarankan oleh produsen (MSRP(Manufacturer's Suggested Retail Price)) berdasarkan merek mobil (Make), yang memberikan informasi tentang bagaimana merek memengaruhi harga jual. Dari grafik ini, terlihat bahwa merek seperti Bugatti dan Maybach memiliki rata-rata MSRP yang jauh lebih tinggi dibandingkan merek lain, mencerminkan bahwa kedua merek itu sebagai produsen mobil mewah kelas atas. Sebaliknya, merek seperti Hyundai, Honda, dan Chevrolet cenderung memiliki MSRP rata-rata yang lebih rendah, mengindikasikan fokus pada pasar mobil dengan harga yang lebih terjangkau. Variasi harga yang signifikan pada beberapa merek, seperti McLaren dan Rolls-Royce, mencakup berbagai segmen harga. Grafik ini diperlukan untuk memahami perbedaan pasar yang dilayani oleh setiap merek dan bagaimana faktor merek berkontribusi terhadap penetapan harga dalam industri otomotif.
+Korelasi fitur ini menampilkan rata-rata harga MSRP berdasarkan merek mobil (Make), yang memberikan informasi tentang bagaimana merek memengaruhi harga jual. Dari grafik ini, terlihat bahwa merek seperti Bugatti dan Maybach memiliki rata-rata MSRP yang jauh lebih tinggi dibandingkan merek lain, mencerminkan bahwa kedua merek itu sebagai produsen mobil mewah kelas atas. Sebaliknya, merek seperti Hyundai, Honda, dan Chevrolet cenderung memiliki MSRP rata-rata yang lebih rendah, mengindikasikan fokus pada pasar mobil dengan harga yang lebih terjangkau. Variasi harga yang signifikan pada beberapa merek, seperti McLaren dan Rolls-Royce, mencakup berbagai segmen harga. Grafik ini diperlukan untuk memahami perbedaan pasar yang dilayani oleh setiap merek dan bagaimana faktor merek berkontribusi terhadap penetapan harga dalam industri otomotif.
 
  <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/a5edae19655215e83ec3a145c09d05e5bd4e3a87/images/korelasitransmisi.png"></div>
 
