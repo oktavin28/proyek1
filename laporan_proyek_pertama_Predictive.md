@@ -57,6 +57,7 @@ Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target va
 Dari ke 12 fitur terdapat bebrapa fitur yang memiliki banyak nilai kosong dan duplikat karena relevansinya rendah dan tidak diperlukan dalam membagun model prediksi harga jual mobil
 
 #### Korelasi Fitur Numerik
+[korelasinumerik](https://github.com/oktavin28/proyek-predictive-analytics/blob/07897aec6c169e46eb12f099ed7d7dc6dc96947b/images/korelasinumerik.png)
 
 #### Korelasi Fitur Kategorik
 
