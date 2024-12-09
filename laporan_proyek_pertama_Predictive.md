@@ -93,7 +93,6 @@ Algoritma random forest adalah teknik dalam machine learning dengan metode ensem
 ## Evaluation
 Mean Absolute Error (MAE) berfungsi untuk mengukur seberapa dekat hasil prediksi suatu model dengan nilai sebenarnya. MAE mengukur rata-rata dari selisih absolut antara prediksi model dan nilai sebenarnya dari data yang diamati. Alih-alih membiarkan nilai apa adanya, pada MAE setiap nilai yang diambil sifatnya absolut sehingga nilai negatif hilang. Berikut adalah penjelasan detail tentang Mean Absolute Error.
 MAE dihitung dengan menjumlahkan selisih absolut antara setiap prediksi individu dan nilai sebenarnya, kemudian dibagi dengan jumlah total observasi yang dapat direpresentasikan sebagai berikut.
-
 <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/a5edae19655215e83ec3a145c09d05e5bd4e3a87/images/hasil%20evaluasi.png"></div>
 
 <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/a5edae19655215e83ec3a145c09d05e5bd4e3a87/images/perbandingan.png"></div>
