@@ -121,6 +121,13 @@ Linear Regression adalah algoritma machine learning yang sederhana namun sangat 
 ## Evaluation
 Mean Square Error (MSE) adalah salah satu metrik evaluasi yang umum digunakan dalam statistik dan machine learning. Fungsi dari MSE adalah untuk mengukur seberapa baik suatu model dalam memetakan nilai prediksi ke nilai sebenarnya dengan menggunakan kuadrat kesalahan sebagai dasar perhitungan. Berikut rumus yang digunakan untuk menghitung MSE:
 
+<div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/c0fea9fda0a3b64da9ec4d97d7465c1501845ac7/images/MSE.jpg"></div>
+
+Keterangan:
+- n adalah jumlah total observasi atau sampel.
+- yi adalah nilai aktual atau nilai sebenarnya dari observasi ke-i.
+- Ŷi adalah nilai prediksi model untuk observasi ke-i.
+
 
 <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/a5edae19655215e83ec3a145c09d05e5bd4e3a87/images/hasil%20evaluasi.png"></div>
 
@@ -132,9 +139,4 @@ Tabel dan grafik ini sama-sama menunjukkan evaluasi kinerja tiga model machine l
 
 Tabel ini menampilkan perbandingan antara nilai aktual (Actual) dan nilai prediksi (Predicted) dari model Gradient Boosting untuk beberapa sampel data. Secara umum, hasil prediksi terlihat cukup mendekati nilai aktual, dengan perbedaan yang relatif kecil, seperti pada baris pertama di mana nilai aktual adalah 34,160, sementara nilai prediksi adalah 33,757.54. Hal ini menunjukkan bahwa model memiliki kemampuan prediksi yang cukup baik dan dapat menangkap pola dalam data dengan akurasi yang layak. 
 
-**---Ini adalah bagian akhir laporan---**
-
-_Catatan:_
-- _Anda dapat menambahkan gambar, kode, atau tabel ke dalam laporan jika diperlukan. Temukan caranya pada contoh dokumen markdown di situs editor [Dillinger](https://dillinger.io/), [Github Guides: Mastering markdown](https://guides.github.com/features/mastering-markdown/), atau sumber lain di internet. Semangat!_
-- Jika terdapat penjelasan yang harus menyertakan code snippet, tuliskan dengan sewajarnya. Tidak perlu menuliskan keseluruhan kode project, cukup bagian yang ingin dijelaskan saja.
 
