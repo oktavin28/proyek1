@@ -61,6 +61,10 @@ Dari ke 12 fitur terdapat bebrapa fitur yang memiliki banyak nilai kosong dan du
  <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/07897aec6c169e46eb12f099ed7d7dc6dc96947b/images/korelasinumerik.png"></div>
 
 #### Korelasi Fitur Kategorik
+ <div><img src="https://github.com/oktavin28/proyek-predictive-analytics/blob/c93189f10ac253c0a2ccdd3ec176e7df2687fba6/images/korelasi%20make.png"></div>
+
+ 
+
 
 ## Data Preparation
 Data telah disiapkan untuk pelatihan model dengan langkah-langkah berikut:
