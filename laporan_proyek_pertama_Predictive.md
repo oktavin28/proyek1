@@ -7,11 +7,17 @@ Ini adalah proyek pertama predictive analytics untuk memenuhi submission dicodin
 
 Mobil adalah salah satu aset yang memiliki nilai jual bervariasi bergantung pada berbagai faktor seperti merek, model, spesifikasi teknis, dan fitur lainnya. Prediksi harga jual mobil dapat membantu produsen, penjual, dan konsumen untuk memahami nilai pasar kendaraan secara lebih akurat. Proyek ini bertujuan untuk membangun model machine learning yang dapat memprediksi harga jual mobil dengan menggunakan dataset yang mencakup berbagai fitur kendaraan.
   
-  Format Referensi: [Judul Referensi](https://scholar.google.com/) 
+Referensi: [Prediksi Harga Mobil Menggunakan Algoritma Regressi dengan Hyper-Parameter Tuning](https://jurnal.unprimdn.ac.id/index.php/JUSIKOM/article/view/2479/1459) 
 
 ## Business Understanding
 
-Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
+Proyek ini dirancang untuk membantu dalam memahami nilai pasar kendaraan berdasarkan berbagai faktor yang memengaruhi harga jual. Perusahaan dengan karakteristik bisnis berikut dapat memanfaatkan hasil dari proyek ini:
+
+- Dealer kendaraan yang ingin menentukan harga jual optimal berdasarkan spesifikasi teknis, gaya, dan ukuran kendaraan.
+- Perusahaan jasa penilaian kendaraan yang menawarkan layanan konsultasi kepada pelanggan terkait harga kendaraan bekas atau baru.
+- Produsen otomotif yang ingin menganalisis bagaimana berbagai atribut produk memengaruhi harga pasar kendaraan mereka.
+
+Pendekatan ini menggunakan algoritma machine learning untuk memprediksi harga berdasarkan dataset yang mencakup berbagai fitur kendaraan. Dengan model prediktif yang akurat, perusahaan dapat meningkatkan efisiensi dalam menentukan harga, menargetkan pasar, dan mengoptimalkan penjualan. 
 
 ### Problem Statements
 
@@ -36,7 +42,7 @@ Pada bagian ini, kamu perlu menjelaskan proses klarifikasi masalah.
 
 
 ## Data Understanding
-Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target variabel adalah 'MSRP'. MSRP adalah harga yang direkomendasikan oleh produsen kendaraan kepada dealer untuk dijadikan acuan dalam menjual produk ke konsumen. Sumber dataset ini dari  [Kaggle](https://www.kaggle.com/datasets/CooperUnion/cardataset/data). Dataset berisi informasi tentang kendaraan dengan fitur-fitur berikut:
+Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target variabel adalah 'MSRP'. MSRP adalah harga yang direkomendasikan oleh produsen kendaraan kepada dealer untuk dijadikan acuan dalam menjual produk ke konsumen. Sumber dataset ini dari  [Kaggle: Car Features and MSRP](https://www.kaggle.com/datasets/CooperUnion/cardataset/data). Dataset berisi informasi tentang kendaraan dengan fitur-fitur berikut:
 - Make: Merek mobil.
 - Model: Model mobil.
 - Year: Tahun produksi.
@@ -55,7 +61,7 @@ Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target va
 - Popularity: Popularitas merek mobil.
 - MSRP: Harga kendaraan (Target).
 
-Dari ke 12 fitur terdapat bebrapa fitur yang memiliki banyak nilai kosong dan duplikat karena relevansinya rendah dan tidak diperlukan dalam membagun model prediksi harga jual mobil
+Dari ke 12 fitur terdapat beberapa fitur yang memiliki banyak nilai kosong dan duplikat karena relevansinya rendah dan tidak diperlukan dalam membagun model prediksi harga jual mobil, seperti Model, Market Category, dan Number of Doors
 
 #### Korelasi Fitur Numerik
 
