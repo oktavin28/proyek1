@@ -94,6 +94,8 @@ Grafik ini menunjukkan rata-rata MSRP berdasarkan jenis gaya kendaraan (Vehicle 
 
 ## Data Preparation
 Data telah disiapkan untuk pelatihan model dengan langkah-langkah berikut:
+- Membaca Dataset
+  Langkah pertama dalam data preparation adalah memastikan memiliki data yang bisa diolah. Di sini, dataset dibaca menggunakan 'pd.read_csv()', kemudian baris-baris awalnya ditampilkan dengan df.head(). Ini ibarat membuka kotak data untuk pertama kalinya, memastikan semuanya terlihat baik dan memahami struktur awalnya.
 - One-hot encoding 
 One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah make, model, engine fuel type, transmission type, driven_wheels, vehicle size, dan vehicle type
 
