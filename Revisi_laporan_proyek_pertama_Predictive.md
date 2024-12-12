@@ -172,8 +172,6 @@ R Square (R²) adalah ukuran statistik yang menunjukkan seberapa besar variasi s
 
 ![rumusr2](https://github.com/oktavin28/proyek-predictive-analytics/blob/185ed595b83193151e855d932974bab23dbfd150/capture-20231123-142806.png)
 
-![capture-20231123-142806](https://github.com/user-attachments/assets/36c47294-2e99-4555-8c3b-06244e132a09)
-
 Keterangan:
 
 * SSregression adalah jumlah kuadrat akibat regresi (dijelaskan jumlah kuadrat)
