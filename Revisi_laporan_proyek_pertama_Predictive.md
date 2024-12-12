@@ -65,7 +65,7 @@ Dari ke 12 fitur terdapat beberapa fitur yang memiliki banyak nilai kosong dan d
 
 #### Korelasi Fitur Numerik
 
-![korelasinumerik](https://github.com/user-attachments/assets/06b3dd0d-7781-49c9-b258-9506c7abb05b)
+https://github.com/oktavin28/proyek-predictive-analytics/blob/9ccb439ce28698c2a9dc0cdb499774fb039d87e9/capture-20231123-142806.png
 
 Matriks korelasi ini memberikan gambaran hubungan antar fitur numerik dalam dataset, yang sangat membantu untuk analisis data lebih lanjut. Matriks ini membantu mengidentifikasi fitur mana yang relevan atau saling berkaitan untuk digunakan dalam analisis atau model prediktif ke depannya.Pada gambar tersebut terlihat antara Engine HP dan Engine Cylinders (0.77), serta antara City MPG dan Highway MPG (0.89) mencerminkan korelasi tinggi. Hal ini juga terlihat antara City MPG dan Highway MPG (0.89), yang menunjukkan bahwa daya mesin lebih besar cenderung meningkatkan harga mobil. 
 Sebaliknya, fitur seperti Highway MPG dan Engine Cylinders menunjukkan korelasi negatif (-0.6), menandakan bahwa mobil dengan lebih banyak silinder biasanya kurang efisien bahan bakarnya. 
