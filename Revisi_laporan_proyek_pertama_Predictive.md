@@ -64,6 +64,7 @@ Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target va
 Dari ke 12 fitur terdapat beberapa fitur yang memiliki banyak nilai kosong dan duplikat karena relevansinya rendah dan tidak diperlukan dalam membagun model prediksi harga jual mobil, seperti Model, Market Category, dan Number of Doors
 
 #### Korelasi Fitur Numerik
+![korelasiNumerik](https://github.com/oktavin28/proyek-predictive-analytics/blob/f3bec15f5c6e8fddf781d0269e243904599b7395/korelasinumerik.png)
 
 https://github.com/oktavin28/proyek-predictive-analytics/blob/9ccb439ce28698c2a9dc0cdb499774fb039d87e9/capture-20231123-142806.png
 
