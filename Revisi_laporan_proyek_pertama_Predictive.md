@@ -64,16 +64,15 @@ Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target va
 Dari ke 12 fitur terdapat beberapa fitur yang memiliki banyak nilai kosong dan duplikat karena relevansinya rendah dan tidak diperlukan dalam membagun model prediksi harga jual mobil, seperti Model, Market Category, dan Number of Doors
 
 #### Korelasi Fitur Numerik
-![korelasiNumerik](https://github.com/oktavin28/proyek-predictive-analytics/blob/f3bec15f5c6e8fddf781d0269e243904599b7395/korelasinumerik.png)
 
-https://github.com/oktavin28/proyek-predictive-analytics/blob/9ccb439ce28698c2a9dc0cdb499774fb039d87e9/capture-20231123-142806.png
+![korelasiNumerik](https://github.com/oktavin28/proyek-predictive-analytics/blob/f3bec15f5c6e8fddf781d0269e243904599b7395/korelasinumerik.png)
 
 Matriks korelasi ini memberikan gambaran hubungan antar fitur numerik dalam dataset, yang sangat membantu untuk analisis data lebih lanjut. Matriks ini membantu mengidentifikasi fitur mana yang relevan atau saling berkaitan untuk digunakan dalam analisis atau model prediktif ke depannya.Pada gambar tersebut terlihat antara Engine HP dan Engine Cylinders (0.77), serta antara City MPG dan Highway MPG (0.89) mencerminkan korelasi tinggi. Hal ini juga terlihat antara City MPG dan Highway MPG (0.89), yang menunjukkan bahwa daya mesin lebih besar cenderung meningkatkan harga mobil. 
 Sebaliknya, fitur seperti Highway MPG dan Engine Cylinders menunjukkan korelasi negatif (-0.6), menandakan bahwa mobil dengan lebih banyak silinder biasanya kurang efisien bahan bakarnya. 
 
 #### Korelasi Fitur Kategorik
 
-![korelasi make](https://github.com/user-attachments/assets/4afcaa9d-42bb-4ec3-becb-478a6b706e72)
+![korelasiMake](https://github.com/oktavin28/proyek-predictive-analytics/blob/a7fd75497d8c7f3f1adcb14c5c35e78ebbd10b9f/korelasi%20make.png)
 
 Korelasi fitur ini menampilkan rata-rata harga MSRP berdasarkan merek mobil (Make), yang memberikan informasi tentang bagaimana merek memengaruhi harga jual. Dari grafik ini, terlihat bahwa merek seperti Bugatti dan Maybach memiliki rata-rata MSRP yang jauh lebih tinggi dibandingkan merek lain, mencerminkan bahwa kedua merek itu sebagai produsen mobil mewah kelas atas. Sebaliknya, merek seperti Hyundai, Honda, dan Chevrolet cenderung memiliki MSRP rata-rata yang lebih rendah, mengindikasikan fokus pada pasar mobil dengan harga yang lebih terjangkau. Variasi harga yang signifikan pada beberapa merek, seperti McLaren dan Rolls-Royce, mencakup berbagai segmen harga. Grafik ini diperlukan untuk memahami perbedaan pasar yang dilayani oleh setiap merek dan bagaimana faktor merek berkontribusi terhadap penetapan harga dalam industri otomotif.
 
