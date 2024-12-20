@@ -180,9 +180,8 @@ Berikut dibawah ini adalah hasil evaluasi performa masing-masing model yaitu Ran
 ![hasilEvaluasi](https://github.com/oktavin28/proyek-predictive-analytics/blob/0dcf09022ab856f86db65d62e9623b3dd5e05fbf/hasil%20evaluasi.png)
 
 
+![perbandingan](https://github.com/oktavin28/proyek-predictive-analytics/blob/dfa206eadf0ee20cc319d843b99525122a6e6e79/perbandingan.png)
 
-
-![perbandingan](https://github.com/user-attachments/assets/597df1dc-c45d-4a83-963b-6110994a1297)
 
 Tabel dan grafik ini sama-sama menunjukkan evaluasi kinerja tiga model machine learning Random Forest, Gradient Boosting, dan Linear Regression berdasarkan metrik MSE (Mean Squared Error) dan R² Score. Terlihat pada tabel bahwa Gradient Boosting menunjukkan performa terbaik dengan R² Score sebesar 0.963868 dan MSE terendah, menandakan bahwa model ini memiliki kemampuan prediksi yang sangat baik dan error yang kecil. Grafik R² Score juga mendukung hasil ini, menunjukkan bahwa Gradient Boosting memiliki nilai R² mendekati 1, yang berarti model ini mampu menunjukkan variabilitas data dengan sangat baik. Random Forest juga memiliki performa yang cukup baik dengan R² Score sebesar 0.899657, meskipun MSE-nya lebih tinggi dibanding Gradient Boosting. Sebaliknya, Linear Regression memiliki performa yang jauh lebih rendah, dengan R² Score hanya 0.417905 dan MSE yang tinggi, menunjukkan bahwa model ini kurang cocok untuk data yang lebih kompleks. Jadi Gradient Boosting sebagai pilihan terbaik untuk memaksimalkan akurasi prediksi dalam kasus ini.
 
