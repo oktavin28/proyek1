@@ -158,7 +158,7 @@ Algoritma pada proyek ini melakukan pemodelan dengan melatih 3 algoritma dengan 
 Langkah selanjutnya evaluasi performa masing-masing model menggunakan data uji (`X_test` dan `y_test`) dengan metrik seperti Mean Squared Error (MSE) dan R² score.
 Mean Square Error (MSE) adalah salah satu metrik evaluasi yang umum digunakan dalam statistik dan machine learning. Fungsi dari MSE adalah untuk mengukur seberapa baik suatu model dalam memetakan nilai prediksi ke nilai sebenarnya dengan menggunakan kuadrat kesalahan sekecil mungkin sebagai dasar perhitungan. Berikut rumus yang digunakan untuk menghitung MSE:
 
-![MSE](https://github.com/user-attachments/assets/613cf189-0c04-4a36-a697-785c5d4ba6c7)
+![MSE](https://github.com/oktavin28/proyek-predictive-analytics/blob/d42711aaeaa6a459d34fcb5a733d100afffd74ef/MSE.jpg)
 
 Keterangan:
 - n adalah jumlah total observasi atau sampel.
