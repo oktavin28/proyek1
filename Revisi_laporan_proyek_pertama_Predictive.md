@@ -167,7 +167,7 @@ Keterangan:
 
 R Square (R²) adalah ukuran statistik yang menunjukkan seberapa besar variasi suatu variabel dependen dapat dijelaskan oleh variabel independen dalam suatu model regresi. Dengan kata lain, R² menunjukkan seberapa baik suatu model regresi (variabel independen) memprediksi hasil data observasi (variabel dependen). R² merupakan angka yang berkisar antara 0 sampai 1 yang mengindikasikan besarnya kombinasi variabel independen secara bersama – sama mempengaruhi nilai variabel dependen. Terdapat tiga kategori pengelompokan pada nilai R² yaitu kategori kuat, kategori moderat, dan kategori lemah [Hair et al., 2011](https://accounting.binus.ac.id/2021/08/12/memahami-r-square-koefisien-determinasi-dalam-penelitian-ilmiah/). Hair et al menyatakan bahwa nilai R square 0,75 termasuk ke dalam kategori kuat, nilai R square 0,50 termasuk kategori moderat dan nilai R square 0,25 termasuk kategori lemah. Untuk menghitung R², berikut [rumusnya](https://info.populix.co/articles/r-square-adalah/):
 
-![rumusr2](https://github.com/oktavin28/proyek-predictive-analytics/blob/185ed595b83193151e855d932974bab23dbfd150/capture-20231123-142806.png)
+![rumusr2](https://github.com/oktavin28/proyek-predictive-analytics/blob/a7be81db6aff83f38481c241ea475eb5261b4c91/capture-20231123-142806.png)
 
 Keterangan:
 
