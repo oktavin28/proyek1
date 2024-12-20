@@ -177,7 +177,9 @@ Jumlah kuadrat akibat regresi mengukur seberapa baik model regresi mewakili data
 
 Berikut dibawah ini adalah hasil evaluasi performa masing-masing model yaitu Random Forest, Gradient Boosting, dan Linear Regression:
 
-![hasil evaluasi](https://github.com/user-attachments/assets/3d13c30a-855f-4e40-8b8d-9574b92f7dfe)
+![hasilEvaluasi](https://github.com/oktavin28/proyek-predictive-analytics/blob/0dcf09022ab856f86db65d62e9623b3dd5e05fbf/hasil%20evaluasi.png)
+
+
 
 
 ![perbandingan](https://github.com/user-attachments/assets/597df1dc-c45d-4a83-963b-6110994a1297)
