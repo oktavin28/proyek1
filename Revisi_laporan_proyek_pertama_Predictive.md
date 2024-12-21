@@ -65,31 +65,30 @@ Dari ke 12 fitur terdapat beberapa fitur yang memiliki banyak nilai kosong dan d
 
 #### Korelasi Fitur Numerik
 
-![korelasiNumerik](https://github.com/oktavin28/proyek-predictive-analytics/blob/f3bec15f5c6e8fddf781d0269e243904599b7395/korelasinumerik.png)
+![korelasiNumerik](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/korelasinumerik.png?raw=true)
 
 Matriks korelasi ini memberikan gambaran hubungan antar fitur numerik dalam dataset, yang sangat membantu untuk analisis data lebih lanjut. Matriks ini membantu mengidentifikasi fitur mana yang relevan atau saling berkaitan untuk digunakan dalam analisis atau model prediktif ke depannya.Pada gambar tersebut terlihat antara Engine HP dan Engine Cylinders (0.77), serta antara City MPG dan Highway MPG (0.89) mencerminkan korelasi tinggi. Hal ini juga terlihat antara City MPG dan Highway MPG (0.89), yang menunjukkan bahwa daya mesin lebih besar cenderung meningkatkan harga mobil. 
 Sebaliknya, fitur seperti Highway MPG dan Engine Cylinders menunjukkan korelasi negatif (-0.6), menandakan bahwa mobil dengan lebih banyak silinder biasanya kurang efisien bahan bakarnya. 
 
 #### Korelasi Fitur Kategorik
 
-![korelasiMake](https://github.com/oktavin28/proyek-predictive-analytics/blob/a7fd75497d8c7f3f1adcb14c5c35e78ebbd10b9f/korelasi%20make.png)
+![korelasiMake](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/korelasi%20make.png?raw=true)
 
 Korelasi fitur ini menampilkan rata-rata harga MSRP berdasarkan merek mobil (Make), yang memberikan informasi tentang bagaimana merek memengaruhi harga jual. Dari grafik ini, terlihat bahwa merek seperti Bugatti dan Maybach memiliki rata-rata MSRP yang jauh lebih tinggi dibandingkan merek lain, mencerminkan bahwa kedua merek itu sebagai produsen mobil mewah kelas atas. Sebaliknya, merek seperti Hyundai, Honda, dan Chevrolet cenderung memiliki MSRP rata-rata yang lebih rendah, mengindikasikan fokus pada pasar mobil dengan harga yang lebih terjangkau. Variasi harga yang signifikan pada beberapa merek, seperti McLaren dan Rolls-Royce, mencakup berbagai segmen harga. Grafik ini diperlukan untuk memahami perbedaan pasar yang dilayani oleh setiap merek dan bagaimana faktor merek berkontribusi terhadap penetapan harga dalam industri otomotif.
 
-![korelasitransmisi](https://github.com/oktavin28/proyek-predictive-analytics/blob/5ec50b5125bca3e00ace9ada121433fcd6aa8496/korelasitransmisi.png)
+![korelasitransmisi](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/korelasitransmisi.png?raw=true)
 
 Grafik ini menunjukkan rata-rata harga MSRP berdasarkan jenis transmisi mobil, yang memberikan informasi tentang bagaimana tipe transmisi mempengaruhi nilai pasar kendaraan. Dari visualisasi ini, terlihat bahwa mobil dengan transmisi Automated Manual memiliki rata-rata MSRP tertinggi dibandingkan tipe lainnya, menunjukkan bahwa teknologi transmisi ini sering ditemukan pada mobil premium atau performa tinggi. Sebaliknya, transmisi Manual dan Automatic memiliki MSRP yang relatif lebih rendah, yang umumnya sesuai dengan pasar mobil konvensional. Tipe transmisi Direct Drive, yang sering ditemukan pada mobil listrik, memiliki harga yang lebih tinggi dibandingkan transmisi manual atau otomatis, tetapi masih di bawah Automated Manual. Sementara itu, kategori Unknown memiliki MSRP paling rendah, kemungkinan berasal dari data yang kurang lengkap atau kendaraan dengan spesifikasi yang kurang jelas. Grafik ini membantu memahami peran tipe transmisi dalam segmen pasar otomotif dan bagaimana hal itu terkait dengan harga jual kendaraan.
 
-![korelasidriven](https://github.com/oktavin28/proyek-predictive-analytics/blob/f594b87c9f7d889bc3c746589afc0652f7ce3380/korelasidriven.png)
+![korelasidriven](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/korelasidriven.png?raw=true)
 
 Grafik ini menunjukkan rata-rata harga MSRP berdasarkan jenis transmisi mobil, memberikan wawasan tentang bagaimana tipe transmisi memengaruhi nilai pasar kendaraan. Dari visualisasi ini, terlihat bahwa mobil dengan transmisi Automated Manual memiliki rata-rata MSRP tertinggi dibandingkan tipe lainnya, mencerminkan bahwa teknologi transmisi ini sering ditemukan pada mobil premium atau performa tinggi. Sebaliknya, transmisi Manual dan Automatic memiliki MSRP yang relatif lebih rendah, yang umumnya sesuai dengan pasar mobil konvensional. Tipe transmisi Direct Drive, yang sering ditemukan pada mobil listrik, memiliki harga yang lebih tinggi dibandingkan transmisi manual atau otomatis, tetapi masih di bawah Automated Manual. Sementara itu, kategori Unknown memiliki MSRP paling rendah, kemungkinan berasal dari data yang kurang lengkap atau kendaraan dengan spesifikasi yang kurang jelas. Grafik ini membantu memahami peran tipe transmisi dalam segmen pasar otomotif dan bagaimana hal itu terkait dengan harga jual kendaraan.
 
-
-![korelasivehicle](https://github.com/user-attachments/assets/c7b52223-e850-487e-b384-cf18b46ed686)
+![korelasivehicle](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/korelasivehicle.png?raw=true)
 
 Grafik ini memperlihatkan rata-rata MSRP berdasarkan ukuran kendaraan (Vehicle Size), yang menunjukkan tentang bagaimana dimensi kendaraan mempengaruhi harga pasar. Terlihat bahwa kendaraan berukuran Large memiliki rata-rata MSRP tertinggi, mencerminkan bahwa mobil besar, seperti SUV mewah atau kendaraan kelas atas lainnya, biasanya dihargai lebih mahal karena fitur, kapasitas, dan teknologi yang lebih canggih. Sementara itu, kendaraan berukuran Midsize memiliki harga rata-rata tingkat menengah, yang sering kali mewakili kendaraan keluarga dengan keseimbangan antara performa, kapasitas, dan efisiensi. Kendaraan Compact memiliki rata-rata MSRP terendah, sesuai dengan karakteristiknya sebagai mobil yang lebih kecil dan efisien, yang biasanya dirancang untuk segmen pasar yang lebih ekonomis. Grafik ini memberikan informasi penting untuk memahami segmentasi pasar otomotif berdasarkan ukuran kendaraan.
 
-![korelasivehiclestyle](https://github.com/oktavin28/proyek-predictive-analytics/blob/70738656d44c072dcbb978f64b54324ab3088afe/korelasivehiclestyle.png)
+![korelasivehiclestyle] (https://github.com/oktavin28/proyek-predictive-analytics/blob/main/korelasivehiclestyle.png?raw=true)
 
 Grafik ini menunjukkan rata-rata MSRP berdasarkan jenis gaya kendaraan (Vehicle Style), memberikan informasi tentang bagaimana desain dan fungsi kendaraan mempengaruhi harga pasar. Terlihat bahwa kendaraan dengan gaya Convertible dan Coupe memiliki rata-rata MSRP tertinggi, karena gaya ini sering ditemukan pada mobil premium atau sport dengan desain yang eksklusif. 4dr SUV juga memiliki MSRP rata-rata yang cukup tinggi, mencerminkan popularitas SUV besar dengan fitur yang lebih lengkap dan mewah. Di sisi lain, gaya kendaraan seperti 4dr Hatchback dan Cargo Minivan memiliki MSRP rata-rata lebih rendah, yang sesuai dengan segmentasinya sebagai kendaraan fungsional atau ekonomis. Variasi harga yang signifikan ini memberikan gambaran bagaimana fungsi, desain, dan target pasar memengaruhi nilai kendaraan, sekaligus menjadi panduan penting bagi konsumen atau produsen dalam memahami tren harga di berbagai segmen kendaraan.
 
@@ -158,7 +157,7 @@ Algoritma pada proyek ini melakukan pemodelan dengan melatih 3 algoritma dengan 
 Langkah selanjutnya evaluasi performa masing-masing model menggunakan data uji (`X_test` dan `y_test`) dengan metrik seperti Mean Squared Error (MSE) dan R² score.
 Mean Square Error (MSE) adalah salah satu metrik evaluasi yang umum digunakan dalam statistik dan machine learning. Fungsi dari MSE adalah untuk mengukur seberapa baik suatu model dalam memetakan nilai prediksi ke nilai sebenarnya dengan menggunakan kuadrat kesalahan sekecil mungkin sebagai dasar perhitungan. Berikut rumus yang digunakan untuk menghitung MSE:
 
-![MSE](https://github.com/oktavin28/proyek-predictive-analytics/blob/d42711aaeaa6a459d34fcb5a733d100afffd74ef/MSE.jpg)
+![MSE](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/MSE.jpg?raw=true)
 
 Keterangan:
 - n adalah jumlah total observasi atau sampel.
@@ -167,7 +166,7 @@ Keterangan:
 
 R Square (R²) adalah ukuran statistik yang menunjukkan seberapa besar variasi suatu variabel dependen dapat dijelaskan oleh variabel independen dalam suatu model regresi. Dengan kata lain, R² menunjukkan seberapa baik suatu model regresi (variabel independen) memprediksi hasil data observasi (variabel dependen). R² merupakan angka yang berkisar antara 0 sampai 1 yang mengindikasikan besarnya kombinasi variabel independen secara bersama – sama mempengaruhi nilai variabel dependen. Terdapat tiga kategori pengelompokan pada nilai R² yaitu kategori kuat, kategori moderat, dan kategori lemah [Hair et al., 2011](https://accounting.binus.ac.id/2021/08/12/memahami-r-square-koefisien-determinasi-dalam-penelitian-ilmiah/). Hair et al menyatakan bahwa nilai R square 0,75 termasuk ke dalam kategori kuat, nilai R square 0,50 termasuk kategori moderat dan nilai R square 0,25 termasuk kategori lemah. Untuk menghitung R², berikut [rumusnya](https://info.populix.co/articles/r-square-adalah/):
 
-![rumusr2](https://github.com/oktavin28/proyek-predictive-analytics/blob/a7be81db6aff83f38481c241ea475eb5261b4c91/capture-20231123-142806.png)
+![rumusr2](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/capture-20231123-142806.png?raw=true)
 
 Keterangan:
 
@@ -177,15 +176,14 @@ Jumlah kuadrat akibat regresi mengukur seberapa baik model regresi mewakili data
 
 Berikut dibawah ini adalah hasil evaluasi performa masing-masing model yaitu Random Forest, Gradient Boosting, dan Linear Regression:
 
-![hasilEvaluasi](https://github.com/oktavin28/proyek-predictive-analytics/blob/0dcf09022ab856f86db65d62e9623b3dd5e05fbf/hasil%20evaluasi.png)
+![hasilEvaluasi](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/hasil%20evaluasi.png?raw=true)
 
 
-![perbandingan](https://github.com/oktavin28/proyek-predictive-analytics/blob/dfa206eadf0ee20cc319d843b99525122a6e6e79/perbandingan.png)
-
+![perbandingan](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/perbandingan.png?raw=true)
 
 Tabel dan grafik ini sama-sama menunjukkan evaluasi kinerja tiga model machine learning Random Forest, Gradient Boosting, dan Linear Regression berdasarkan metrik MSE (Mean Squared Error) dan R² Score. Terlihat pada tabel bahwa Gradient Boosting menunjukkan performa terbaik dengan R² Score sebesar 0.963868 dan MSE terendah, menandakan bahwa model ini memiliki kemampuan prediksi yang sangat baik dan error yang kecil. Grafik R² Score juga mendukung hasil ini, menunjukkan bahwa Gradient Boosting memiliki nilai R² mendekati 1, yang berarti model ini mampu menunjukkan variabilitas data dengan sangat baik. Random Forest juga memiliki performa yang cukup baik dengan R² Score sebesar 0.899657, meskipun MSE-nya lebih tinggi dibanding Gradient Boosting. Sebaliknya, Linear Regression memiliki performa yang jauh lebih rendah, dengan R² Score hanya 0.417905 dan MSE yang tinggi, menunjukkan bahwa model ini kurang cocok untuk data yang lebih kompleks. Jadi Gradient Boosting sebagai pilihan terbaik untuk memaksimalkan akurasi prediksi dalam kasus ini.
 
-![predict](https://github.com/oktavin28/proyek-predictive-analytics/blob/3b1c6992999d95068af8378248fdec29fafbf367/predict.png)
+![predict](https://github.com/oktavin28/proyek-predictive-analytics/blob/main/predict.png?raw=true)
 
 Tabel ini menampilkan perbandingan antara nilai aktual (Actual) dan nilai prediksi (Predicted) dari model Gradient Boosting untuk beberapa sampel data. Secara umum, hasil prediksi terlihat cukup mendekati nilai aktual, dengan perbedaan yang relatif kecil, seperti pada baris pertama di mana nilai aktual adalah 34,160, sementara nilai prediksi adalah 33,757.54. Hal ini menunjukkan bahwa model memiliki kemampuan prediksi yang cukup baik dan dapat menangkap pola dalam data dengan akurasi yang layak. 
 
