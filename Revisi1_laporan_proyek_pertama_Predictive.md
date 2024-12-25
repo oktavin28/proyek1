@@ -42,7 +42,13 @@ Pendekatan ini menggunakan algoritma machine learning untuk memprediksi harga be
 
 
 ## Data Understanding
-Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target variabel adalah 'MSRP'. MSRP adalah harga yang direkomendasikan oleh produsen kendaraan kepada dealer untuk dijadikan acuan dalam menjual produk ke konsumen. Sumber dataset ini dari  [Kaggle: Car Features and MSRP](https://www.kaggle.com/datasets/CooperUnion/cardataset/data). Dataset berisi informasi tentang kendaraan dengan fitur-fitur berikut:
+- Membaca Dataset
+
+Langkah pertama adalah memastikan memiliki data yang bisa diolah. Pada bagian ini, kita membaca dataset dari file `data.csv` menggunakan fungsi `pd.read_csv()` dari library pandas. Fungsi ini digunakan untuk memuat data dalam format CSV ke dalam struktur DataFrame, yang memudahkan manipulasi dan analisis data. Kemudian 5 baris awalnya ditampilkan dengan df.head(). 
+
+- Memeriksa Informasi Dataset
+  
+Pada bagian ini, menggunakan fungsi `df.info()` untuk mendapatkan gambaran umum tentang dataset, termasuk jumlah baris, kolom dan tipe data. Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target variabel adalah 'MSRP'. MSRP adalah harga yang direkomendasikan oleh produsen kendaraan kepada dealer untuk dijadikan acuan dalam menjual produk ke konsumen. Sumber dataset ini dari  [Kaggle: Car Features and MSRP](https://www.kaggle.com/datasets/CooperUnion/cardataset/data). Dataset berisi informasi tentang kendaraan dengan fitur-fitur berikut:
 - Make: Merek mobil.
 - Model: Model mobil.
 - Year: Tahun produksi.
@@ -61,7 +67,7 @@ Dataset yang digunakan terdiri dari 11,914 sampel dan 16 fitur, dengan target va
 - Popularity: Popularitas merek mobil.
 - MSRP: Harga kendaraan (Target).
 
-Dari ke 12 fitur terdapat beberapa fitur yang memiliki banyak nilai kosong dan duplikat karena relevansinya rendah dan tidak diperlukan dalam membagun model prediksi harga jual mobil, seperti Model, Market Category, dan Number of Doors
+Tipe data object (Kolom dengan data teks atau kategorik, seperti `Make`, `Model`,`Engine Fuel Type`, `Transmission Type`, `Driven_Wheels`, `Market Category`, `Vehicle Size`, dan `Vehicle Style`). int64 (Kolom dengan data numerik integer, seperti `Year` `highway MPG`, `city mpg`, `Popularity` dan `MSRP`). float64 (Kolom dengan data numerik desimal, seperti `Engine HP`, `Engine Cylinders`,  dan  `Number of Doors`).
 
 #### Korelasi Fitur Numerik
 
@@ -92,17 +98,6 @@ Grafik ini memperlihatkan rata-rata MSRP berdasarkan ukuran kendaraan (Vehicle S
 
 Grafik ini menunjukkan rata-rata MSRP berdasarkan jenis gaya kendaraan (Vehicle Style), memberikan informasi tentang bagaimana desain dan fungsi kendaraan mempengaruhi harga pasar. Terlihat bahwa kendaraan dengan gaya Convertible dan Coupe memiliki rata-rata MSRP tertinggi, karena gaya ini sering ditemukan pada mobil premium atau sport dengan desain yang eksklusif. 4dr SUV juga memiliki MSRP rata-rata yang cukup tinggi, mencerminkan popularitas SUV besar dengan fitur yang lebih lengkap dan mewah. Di sisi lain, gaya kendaraan seperti 4dr Hatchback dan Cargo Minivan memiliki MSRP rata-rata lebih rendah, yang sesuai dengan segmentasinya sebagai kendaraan fungsional atau ekonomis. Variasi harga yang signifikan ini memberikan gambaran bagaimana fungsi, desain, dan target pasar memengaruhi nilai kendaraan, sekaligus menjadi panduan penting bagi konsumen atau produsen dalam memahami tren harga di berbagai segmen kendaraan.
 
-
-## Data Preparation
-Data telah disiapkan untuk pelatihan model dengan langkah-langkah berikut:
-- Membaca Dataset
-
-Langkah pertama dalam data preparation adalah memastikan memiliki data yang bisa diolah. Pada bagian ini, kita membaca dataset dari file `data.csv` menggunakan fungsi `pd.read_csv()` dari library pandas. Fungsi ini digunakan untuk memuat data dalam format CSV ke dalam struktur DataFrame, yang memudahkan manipulasi dan analisis data. Kemudian 5 baris awalnya ditampilkan dengan df.head(). 
-
-- Memeriksa Informasi Dataset
-  
-Pada bagian ini, menggunakan fungsi `df.info()` untuk mendapatkan gambaran umum tentang dataset, termasuk jumlah baris, kolom dan tipe data. Dataset ini memiliki total **11,914 entri**, yang berarti ada 11,914 sampel data, terdiri dari **16 kolom**, yang mencakup berbagai atribut kendaraan seperti merek, model, tahun produksi, dan lainnya. Tipe data `object` (Kolom dengan data teks atau kategorik, seperti `Make`, `Model`, dan `Engine Fuel Type`). `int64` (Kolom dengan data numerik integer, seperti `Year` dan `MSRP`). `float64`* (Kolom dengan data numerik desimal, seperti `Engine HP` dan `Engine Cylinders`).
-
 - Memeriksa Duplikasi Data
 
 Mengidentifikasi jumlah baris duplikat dalam dataset, menggunakan fungsi `df.duplicated().sum()`. Pada data ini menghasilkan 715 baris duplikat. Baris duplikat dapat menyebabkan bias dalam analisis data dan pemodelan machine learning. 
@@ -123,17 +118,20 @@ Menghapus kolom dianggap yang tidak relevan atau tidak memiliki pengaruh sifnifi
 
 Setelah missing values diidentifikasi, langkah selanjutnya adalah menanganinya dengan menggunakan metode imputasi berbasis statistik. Metode imputasi ini menjaga informasi dalam data sebanyak mungkin tanpa menghapus baris yang mengandung nilai kosong. Fungsi `(df.median())` digunakan untuk mengisi nilai kosong pada kolom numerik dengan nilai tengah (median) dari kolom tersebut. Median digunakan untuk mengurangi dampak outlier pada data, sehingga lebih representatif dibandingkan rata-rata. Kemudian fungsi `(df.mode())` digunakan untuk mengisi nilai kosong pada kolom non-numerik (kategorik) dengan nilai yang paling sering muncul (modus) di kolom tersebut. Mode dipilih karena mode merepresentasikan kategori yang paling umum. Strategi ini memastikan dataset tetap utuh dan representatif. 
 
+
+## Data Preparation
+Data telah disiapkan untuk pelatihan model dengan langkah-langkah berikut:
 - One-hot encoding  
 
 One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah make, model, engine fuel type, transmission type, driven_wheels, vehicle size, dan vehicle type
 
+- Normalisasi
+
+Algoritma machine learning akan memiliki performa lebih baik dan bekerja lebih cepat jika dimodelkan dengan data seragam yang memiliki skala relatif sama. Salah satu teknik normalisasi yang digunakan pada proyek ini adalah Standarisasi dengan `StandardScaler` dari libarary sklearn. Proses ini bertujuan untuk menyelaraskan skala data agar algoritma machine learning dapat bekerja lebih optimal.
+
 - Train Test Split
 
 Train test split merupakan proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Pada proyek ini dataset sebanyak 11199 dibagi menjadi 80% untuk data latih yaitu 8959 dan untuk data uji menjadi 20% yaitu 2240 
-
-- Normalization
-
-Algoritma machine learning akan memiliki performa lebih baik dan bekerja lebih cepat jika dimodelkan dengan data seragam yang memiliki skala relatif sama. Salah satu teknik normalisasi yang digunakan pada proyek ini adalah Standarisasi dengan `StandardScaler` dari libarary sklearn. Proses ini bertujuan untuk menyelaraskan skala data agar algoritma machine learning dapat bekerja lebih optimal.
 
 
 ## Modeling
