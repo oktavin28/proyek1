@@ -102,13 +102,16 @@ Grafik ini menunjukkan rata-rata MSRP berdasarkan jenis gaya kendaraan (Vehicle 
 
 Mengidentifikasi jumlah baris duplikat dalam dataset, menggunakan fungsi `df.duplicated().sum()`. Pada data ini menghasilkan 715 baris duplikat. Baris duplikat dapat menyebabkan bias dalam analisis data dan pemodelan machine learning. 
 
-- Menghapus Data Duplikat
-
-Menghapus 715 baris duplikat untuk memastikan dataset bersih dari data redundan, menggunakan fungsi `df.drop_duplicates()`. Menghapus data duplikat bertujuan untuk mencegah bias dalam analisis dan model machine learning. Baris yang sama persis dapat memengaruhi hasil analisis atau prediksi, sehingga penghapusan duplikat adalah langkah penting dalam pembersihan data.
-
 - Identifikasi Missing Values
 
 Menghitung jumlah Missing Values di setiap kolom. Pada langkah ini, kita menggunakan fungsi `df.isnull().sum()` untuk menghitung jumlah missing values di setiap kolom dalam dataset. Analisis ini membantu mengidentifikasi kolom mana yang memerlukan penanganan, seperti imputasi atau penghapusan baris/kolom. Langkah ini penting untuk memastikan dataset siap digunakan untuk analisis dan pemodelan machine learning. Pada data proyek ini menunjukkan beberapa kolom yang teridentifikasi yaitu `Engine Fuel Type` : 3 nilai, `Engine HP` : 69 nilai, `Engine Cylinders` : 30 nilai, `Number of Doors` : 6 nilai, `Market Category` : 3,376 nilai.
+
+
+## Data Preparation
+Data telah disiapkan untuk pelatihan model dengan langkah-langkah berikut:
+- Menghapus Data Duplikat
+
+Menghapus 715 baris duplikat untuk memastikan dataset bersih dari data redundan, menggunakan fungsi `df.drop_duplicates()`. Menghapus data duplikat bertujuan untuk mencegah bias dalam analisis dan model machine learning. Baris yang sama persis dapat memengaruhi hasil analisis atau prediksi, sehingga penghapusan duplikat adalah langkah penting dalam pembersihan data.
 
 - Menghapus Kolom yang tidak Relevan
 
@@ -118,9 +121,6 @@ Menghapus kolom dianggap yang tidak relevan atau tidak memiliki pengaruh sifnifi
 
 Setelah missing values diidentifikasi, langkah selanjutnya adalah menanganinya dengan menggunakan metode imputasi berbasis statistik. Metode imputasi ini menjaga informasi dalam data sebanyak mungkin tanpa menghapus baris yang mengandung nilai kosong. Fungsi `(df.median())` digunakan untuk mengisi nilai kosong pada kolom numerik dengan nilai tengah (median) dari kolom tersebut. Median digunakan untuk mengurangi dampak outlier pada data, sehingga lebih representatif dibandingkan rata-rata. Kemudian fungsi `(df.mode())` digunakan untuk mengisi nilai kosong pada kolom non-numerik (kategorik) dengan nilai yang paling sering muncul (modus) di kolom tersebut. Mode dipilih karena mode merepresentasikan kategori yang paling umum. Strategi ini memastikan dataset tetap utuh dan representatif. 
 
-
-## Data Preparation
-Data telah disiapkan untuk pelatihan model dengan langkah-langkah berikut:
 - One-hot encoding  
 
 One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah make, model, engine fuel type, transmission type, driven_wheels, vehicle size, dan vehicle type
