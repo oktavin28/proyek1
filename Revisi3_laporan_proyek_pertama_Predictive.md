@@ -121,6 +121,10 @@ Menghapus kolom dianggap yang tidak relevan atau tidak memiliki pengaruh sifnifi
 
 Setelah missing values diidentifikasi, langkah selanjutnya adalah menanganinya dengan menggunakan metode imputasi berbasis statistik. Metode imputasi ini menjaga informasi dalam data sebanyak mungkin tanpa menghapus baris yang mengandung nilai kosong. Fungsi `(df.median())` digunakan untuk mengisi nilai kosong pada kolom numerik dengan nilai tengah (median) dari kolom tersebut. Median digunakan untuk mengurangi dampak outlier pada data, sehingga lebih representatif dibandingkan rata-rata. Kemudian fungsi `(df.mode())` digunakan untuk mengisi nilai kosong pada kolom non-numerik (kategorik) dengan nilai yang paling sering muncul (modus) di kolom tersebut. Mode dipilih karena mode merepresentasikan kategori yang paling umum. Strategi ini memastikan dataset tetap utuh dan representatif. 
 
+- Pemisahan Fitur yang Relevan dan Target
+
+Fitur yang relevan adalah variabel yang dipilih berdasarkan signifikansi statistik dan hubungan yang jelas dengan target, seperti `Make`, `Year`, `Engine Fuel Type`, `Engine HP`, `Engine Cylinders`, `Transmission Type`, `Driven_Wheels`, `Vehicle Size`, `Vehicle Style`, `highway MPG`, `city mpg`, dan `Popularity`, fitur relevan ini yang memengaruhi harga jual kendaraan (MSRP) sebagai target. Proses pemisahan antara fitur (X) dan target (y) dilakukan untuk memastikan model hanya mempelajari hubungan yang bermakna, menghindari noise, dan mengoptimalkan akurasi prediksi. Dengan demikian, target dipisahkan sebagai output yang diprediksi, sementara fitur relevan disiapkan untuk dilatih dalam model machine learning. Pendekatan ini mendukung analisis yang terstruktur dan memungkinkan interpretasi yang lebih baik terhadap hasil prediksi.
+
 - One-hot encoding  
 
 One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah make, model, engine fuel type, transmission type, driven_wheels, vehicle size, dan vehicle type
